@@ -8,7 +8,7 @@
     <table class="table table-hover table-striped">
         <thead class="table-dark">
             <tr>
-                <th>#ID</th>
+                <th>ID</th>
                 <th>Nome</th>
                 <th>Email</th>
                 <th>Ações</th>
