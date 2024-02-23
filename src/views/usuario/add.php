@@ -1,6 +1,4 @@
 
-?>
-<?php include_once('./src/views/partials/header.php'); ?>
 
 <section class="container mt-3">
     <h1 class="display-4 text-center">Novo Usuário</h1>
@@ -22,4 +20,4 @@
     </form>
 </section>
 
-<?php include_once('./src/views/partials/footer.php'); ?>
+
