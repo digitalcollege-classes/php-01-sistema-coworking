@@ -4,7 +4,8 @@ ini_set('display_errors', 1);
 
 $route = $_SERVER['REQUEST_URI'];
 
-function render ($view) {
+function render($view)
+{
     include "../src/views/_partials/header.php";
 
     //if (usuario logado)
@@ -15,11 +16,9 @@ function render ($view) {
     include "../src/views/_partials/footer.php";
 }
 
-match($route) {
+match ($route) {
     '/' => render('home'),
-
     '/usuarios/listar' => render("usuario/listar"),
     '/usuarios/adicionar' => render("usuario/add"),
     default => render("erros/not_found"),
 };
-
