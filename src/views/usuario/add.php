@@ -5,6 +5,10 @@
 
     <form action="/usuarios/inserir" method="post">
         <div class="mb-3">
+            <input type="hidden" class="form-control" id="id" name="id">
+        </div>
+
+        <div class="mb-3">
             <label for="nome" class="form-label">Nome:</label>
             <input type="text" class="form-control" id="nome" name="nome" required>
         </div>
@@ -16,7 +20,7 @@
             <label for="senha" class="form-label">Senha:</label>
             <input type="password" class="form-control" id="senha" name="senha" required>
         </div>
-        <button type="submit" class="btn btn-primary">Salvar</button>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
     </form>
 </section>
 
