@@ -1,21 +1,17 @@
+<nav class="btn_group">
+    <div class="btn-group">
+        <a href="/" class="btn btn-outline-dark">Home</a>
+    </div>
 
-<style>
-.nav_php {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            background-color: #f8f9fa;
-            justify-content: center;
-            margin: 0 auto;
-        
-        }
-        
-
-</style>
-<nav class="nav_php">
-    <a href="/" class="btn btn-outline-dark">Home</a>
-    <a href="/usuarios/adicionar" class="btn btn-outline-dark">Novo Usuario</a>
-    <a href="/usuarios/listar" class="btn btn-outline-dark">Listar Usuarios</a>
+    <div class="btn-group ">
+        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Usuário
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="/usuarios/adicionar">Adicionar</a></li>
+            <li><a class="dropdown-item" href="/usuarios/listar">Listar</a></li>
+        </ul>
+    </div>
 </nav>
 
-
+<hr>

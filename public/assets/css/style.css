@@ -1,0 +1,125 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilização do header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contact-info p,
+.social-links a {
+    margin-right: 20px;
+}
+
+.logophp img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+/* estilização nav */
+
+.btn_group {
+    display: flex;
+    justify-content: center;
+}
+
+.btn_group button {
+    margin: 0 5px; /* Ajuste conforme necessário */
+}
+
+
+/* Estilização do footer */
+.footer {
+    background-color: #0056b3;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.map {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.logo {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Estilização do home */
+.home-section {
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+.card {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização Adicional para o Carrossel */
+#carouselSala {
+    margin-top: 20px; 
+}
+
+/* Estilização para os Controles de Navegação do Carrossel */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid #dee2e6;
+}
+.carousel-inner .carousel-item img {
+    width: 100%;
+    height: 250px; 
+}
+
+/* Adaptação do Tamanho do Carrossel para Telas Menores (opcional) */
+@media (max-width: 768px) {
+    #carouselSala {
+        max-width: 70%; /* Ajuste conforme necessário */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .carousel-inner .carousel-item img {
+        width: 100%; /* Garante que as imagens ocupem 100% da largura da coluna */
+    }
+}
+
+
