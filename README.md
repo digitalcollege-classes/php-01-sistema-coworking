@@ -37,5 +37,9 @@ Para acessar o command line do MySQL:
 
 `mysql -u user -p`
 
+<<<<<<< HEAD
+o usuario é a palavra user, e a senha é exatamente password
+>>>>>>> 4a569c6 (Atualizando readme)
+=======
 o usuario é a palavra user, e a senha é exatamente password
 >>>>>>> 4a569c6 (Atualizando readme)
