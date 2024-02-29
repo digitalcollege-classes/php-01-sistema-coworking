@@ -15,3 +15,8 @@ Essa estrutura já está dockerizada, então basta ter o docker compose rodando 
 Primeiro basta clonar o repositório
 
 `git clone `
+
+
+
+`docker-compose up -d`
+
