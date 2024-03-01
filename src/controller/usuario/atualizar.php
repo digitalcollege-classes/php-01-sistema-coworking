@@ -7,7 +7,14 @@ $senha = $_POST['senha'] ?? '';
 // faz o UPDATE
 if ($id && $nome && $email && $senha) {
     $database = require("../src/conexao.php");
-    $database->query("UPDATE tb_usuario SET nome = '{$nome}', email = '{$email}', senha = '{$senha}' WHERE id = '{$id}'");
+
+    $query = $database->prepare("UPDATE tb_usuario SET nome = :nome, email = :email, senha = :senha WHERE id = :id");
+    $query->execute([
+        ':id' => $id,
+        ':nome' => $nome,
+        ':email' => $email,
+        ':senha' => $senha
+    ]);
 }
 
 exit(header('location: /usuarios/listar'));
