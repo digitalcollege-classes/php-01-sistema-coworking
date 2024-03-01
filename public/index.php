@@ -2,6 +2,8 @@
 
 ini_set('display_errors', 1);
 
+include_once "../vendor/autoload.php";
+
 $route = explode('?', $_SERVER['REQUEST_URI'])[0];
 
 function render($view)
