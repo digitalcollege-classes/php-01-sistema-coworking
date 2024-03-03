@@ -1,12 +1,13 @@
 <?php
+use App\Core\DatabaseConnection;
+
 $id = $_GET['id'] ?? null;
 
 if (is_null($id)) {
     exit(header('location: /usuarios/adicionar'));
 }
 
-$database = require("../src/conexao.php");
-$resultado = $database->query("SELECT * FROM tb_usuario WHERE id = '{$id}'")->fetch();
+$resultado = DatabaseConnection::open()->query("SELECT * FROM tb_usuario WHERE id = '{$id}'")->fetch();
 
 $nome = $resultado['nome'];
 $email = $resultado['email'];

@@ -1,6 +1,8 @@
 <?php
 
-declare(strict_types=1); 
+declare(strict_types=1);
+
+use App\Core\DatabaseConnection;
 
 include "../src/Http/Request.php";
 include "../src/Helpers/EncryptPassword.php";
@@ -11,9 +13,7 @@ $senha = Request::post('senha');
 
 // faz o INSERT
 if ($nome && $email && $senha) {
-    $database = require("../src/conexao.php");
-
-    $query = $database->prepare("
+    $query = DatabaseConnection::open()->prepare("
         INSERT INTO tb_usuario (nome, email, senha) 
         VALUES (:nome, :email, :senha)
     ");
