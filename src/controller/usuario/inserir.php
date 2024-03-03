@@ -3,15 +3,11 @@
 declare(strict_types=1); 
 
 include "../src/Http/Request.php";
+include "../src/Helpers/EncryptPassword.php";
 
 $nome = Request::post('nome');
 $email = Request::post('email');
 $senha = Request::post('senha');
-
-function encryptPassword(string $password): string
-{
-    return password_hash($password, PASSWORD_BCRYPT);
-} 
 
 // faz o INSERT
 if ($nome && $email && $senha) {
