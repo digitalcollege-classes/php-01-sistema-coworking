@@ -1,8 +1,11 @@
 <?php
 
-use App\Core\DatabaseConnection;
+declare(strict_types=1);
 
-$id = $_GET['id'] ?? null;
+use App\Core\DatabaseConnection;
+use App\Http\Request;
+
+$id = Request::get('id');
 
 // faz o DELETE
 if ($id) {

@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 use App\Core\DatabaseConnection;
+use App\Http\Request;
 
-include "../src/Http/Request.php";
 include "../src/Helpers/EncryptPassword.php";
 
 $nome = Request::post('nome');

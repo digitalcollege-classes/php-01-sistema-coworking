@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace App\Http;
+
 class Request
 {
     // public static function getParam(string $method, string $param): string
