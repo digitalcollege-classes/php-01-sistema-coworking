@@ -2,7 +2,8 @@
 
 declare(strict_types=1); 
 
-include "../src/Http/Request.php";
+use App\Http\Request;
+
 include "../src/Helpers/EncryptPassword.php";
 
 $nome = Request::post('nome');
