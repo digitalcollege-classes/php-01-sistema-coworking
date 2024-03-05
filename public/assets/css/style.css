@@ -1,0 +1,77 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+
+.btn_group {
+    display: flex;
+    justify-content: center;
+}
+
+.btn_group button {
+    margin: 0 5px; 
+}
+
+/* Estilização do header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contact-info p,
+.social-links a {
+    margin-right: 20px;
+}
+
+.logophp img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilização do footer */
+.footer {
+    background-color: #0056b3;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    margin: 10px;
+}
+
+.map {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.logo {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
