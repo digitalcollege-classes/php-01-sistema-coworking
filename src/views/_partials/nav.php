@@ -1,9 +1,9 @@
-<nav>
+<nav class="btn_group">
     <div class="btn-group">
         <a href="/" class="btn btn-outline-dark">Home</a>
     </div>
 
-    <div class="btn-group">
+    <div class="btn-group ">
         <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
             Usuário
         </button>
