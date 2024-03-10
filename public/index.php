@@ -31,5 +31,10 @@ match ($route) {
     '/usuarios/inserir' => execute("usuario/inserir"),
     '/usuarios/atualizar' => execute("usuario/atualizar"),
     '/usuarios/excluir' => execute("usuario/excluir"),
+
+    '/salas/adicionar' => render("sala/add"),
+    '/salas/listar' => render("sala/listar"),
+    '/salas/inserir' => execute("sala/inserir"),
+
     default => render("erros/not_found"),
 };

@@ -17,4 +17,23 @@ INSERT INTO tb_usuario
 VALUES
     ('Zefina', 'zefina@email.com', '456');
 
-SELECT * FROM tb_usuario;
+CREATE TABLE IF NOT EXISTS tb_sala (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    capacidade VARCHAR(4) NOT NULL
+);
+
+INSERT INTO tb_sala 
+    (nome, capacidade)
+VALUES
+    ('Larry Page', '30');
+
+INSERT INTO tb_sala 
+    (nome, capacidade)
+VALUES
+    ('Stive Jobs', '25');
+
+INSERT INTO tb_sala 
+    (nome, capacidade)
+VALUES
+    ('AuditorioX', '350');
