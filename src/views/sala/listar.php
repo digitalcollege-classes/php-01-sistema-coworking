@@ -29,7 +29,7 @@
                             <td>{$cada['capacidade']}</td>
                             <td>
                                 <a href='/salas/editar?id={$cada['id']}' class='btn btn-warning'>Editar</a>
-                                <a href='/salas/excluir?id={$cada['id']}' class='btn btn-warning'>Excluir</a>
+                                <a href='/salas/excluir?id={$cada['id']}' class='btn btn-danger'>Excluir</a>
                             </td>
                         </tr>
                     ";

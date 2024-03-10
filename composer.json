@@ -1,8 +1,7 @@
 {
     "autoload": {
         "psr-4": {
-            "App\\": "src/",
-            "App\\Helpers\\": "scr/Helpers"
+            "App\\": "src/"
         }
     }
 }
