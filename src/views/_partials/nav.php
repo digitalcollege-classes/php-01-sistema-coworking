@@ -12,6 +12,15 @@
             <li><a class="dropdown-item" href="/usuarios/listar">Listar</a></li>
         </ul>
     </div>
+    <div class="btn-group">
+        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Sala
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="/salas/adicionar">Adicionar</a></li>
+            <li><a class="dropdown-item" href="/salas/listar">Listar</a></li>
+        </ul>
+    </div>
 </nav>
 
 <hr>
